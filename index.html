@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smart Attendance & Idle-Hour Learning — Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Prototype website: automated attendance, structured idle-hour learning, personalized planning and schedule integration for educational institutions.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Smart Attendance & Idle-Hour Learning</h1>
+      <nav>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#features">Features</a>
+        <a href="#deploy">Deploy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="card">
+      <h2>Make attendance effortless — reclaim teaching time</h2>
+      <p class="lead">A lightweight demo website describing an automated attendance & idle-hour learning system that integrates daily schedules, personalized plans and automated tracking.</p>
+      <a class="btn" href="#solution">Learn how</a>
+    </section>
+
+    <section id="problem" class="card">
+      <h3>The problem</h3>
+      <p>Many educational institutions still depend on manual attendance systems, which are time-consuming and error-prone. Teachers spend a significant portion of class time marking attendance, reducing valuable instructional hours. Students often waste free periods with unproductive activities due to lack of structured guidance. This leads to poor time management and reduced alignment with long-term goals. There is also a gap in personalized learning support during idle classroom hours. Institutions currently lack tools that integrate daily schedules with individual student planning and automated tracking.</p>
+    </section>
+
+    <section id="solution" class="card">
+      <h3>The solution (high level)</h3>
+      <ol>
+        <li><strong>Automated Attendance</strong> — QR check-in, Bluetooth or NFC-based quick scans for fast, accurate records.</li>
+        <li><strong>Idle-Hour Planner</strong> — Structured micro-tasks and personalized suggestions during free periods.</li>
+        <li><strong>Schedule Integration</strong> — Sync daily timetables with individualized study and career micro-goals.</li>
+        <li><strong>Reports & Analytics</strong> — Attendance stats, participation heatmaps and time-management suggestions for students and teachers.</li>
+      </ol>
+      <p>Below is a simple prototype UI flow you can extend and deploy on GitHub Pages.</p>
+    </section>
+
+    <section id="features" class="card">
+      <h3>Prototype Features (included)</h3>
+      <ul>
+        <li>Landing page & feature list (this site)</li>
+        <li>Sample JSON-based schedule + interactive mock attendance (client-side)</li>
+        <li>Simple local "simulate check-in" button to demo attendance capture</li>
+        <li>Instructions to deploy to GitHub Pages</li>
+      </ul>
+      <div class="demo">
+        <h4>Demo: simulate a student check-in</h4>
+        <div id="demoPanel">
+          <label>Student name: <input id="nameInput" placeholder="Type a name"/></label>
+          <button id="checkinBtn" class="btn">Simulate Check-in</button>
+          <div id="logArea" class="log"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deploy" class="card">
+      <h3>How to deploy to GitHub Pages</h3>
+      <ol>
+        <li>Create a new GitHub repository (public or private)</li>
+        <li>Upload these files (or push via git)</li>
+        <li>Go to repository Settings → Pages, and set the branch to <code>main</code> (or <code>gh-pages</code>) and root folder <code>/</code></li>
+        <li>Save — your site will be live at <code>https://&lt;username&gt;.github.io/&lt;repo&gt;</code></li>
+      </ol>
+      <p>See the included <code>README.md</code> for direct git commands.</p>
+      <a class="btn" href="/edtech_attendance_demo.zip" download>Download ZIP</a>
+    </section>
+
+    <footer class="card footer">
+      <p>Prototype generated for user content. Extend with backend (Firebase, Supabase) to capture real attendance, authentication, and persistent analytics.</p>
+      <p>Made with ❤️ — export & deploy to GitHub Pages.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
